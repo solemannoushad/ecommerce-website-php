@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="shabaz.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/cycle2.js"></script>
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="nav-list">
+                <li><a href="#" class="nav-items default">Qualified</a></li>
+                <li><a href="shabaz.html" class="nav-items active" > Home</a></li>
+                <li><a href="#" class="nav-items" id="form"  onclick="login()" >Log In</a></li>
+                <li><a href="#" class="nav-items"><i class="fas fa-angle-down add-more"></i>Add More</a></li>
+            </ul>
+        </nav>
+
+        <div id="down-nav">
+            <div id="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="img-section">
+        <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="false">
+            <div class="slide img1"></div>
+            <div class="slide img2"></div>
+            <div class="slide img3"></div>
+        </div>
+        <div id="login-pop">
+            <i class="fas fa-times" id="cross" onclick="cross()"></i>
+            <!-- <i class="fas fa-sort-up"></i> -->
+            <div id="heading">
+
+                <h2>Login In here</h2>
+                <i class="far fa-hand-point-down"></i>
+            </div>
+    
+            <div id="user">
+                <label for="username">Username:</label>
+                <input type="text" name="" id="username">
+            </div>
+    
+            <div id="pass">
+                <label for="password" id="passlabel">Password:</label>
+                <i class="fas fa-eye" id="eye" onclick="eye()"></i>
+                <input type="password" name="" id="password">
+                <div id="forget">
+                    <label for="">Forget Password?</label>
+        
+                </div>
+            </div>
+    
+    
+            <button class="btn" type="submit">Log In</button>
+            </div>
+    </section>
+
+    <section id="search-area">
+        <div id="left">
+            <button id="btn1" class="btn">Add New Tracker</button>
+
+        </div>
+        <div id="center">
+            <i class="fa fa-search"></i>
+            <input type="text" name="" id="search" placeholder="Looking for something?">
+
+        </div>
+        <div id="right">
+            <i class="fas fa-angle-down" id="down"></i>
+            <button id="btn2" class="btn" onmouseover="white()" onmouseout="black()">Most Rescent</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <div class="right-services"></div>
+            <div class="left-services pic1"></div>
+        </div>
+        <div class="services-container">
+            <div class="right-services"></div>
+            <div class="left-services pic1"></div>
+        </div>
+        <div class="services-container row-reverse">
+            <div class="right-services"></div>
+            <div class="left-services pic2"></div>
+        </div>
+        <div class="services-container row-reverse">
+            <div class="right-services"></div>
+            <div class="left-services pic2"></div>
+        </div>
+    </section>
+
+
+
+
+<script>
+
+    function login(){
+        let form = document.getElementById("login-pop");
+        let property = form.style.zIndex;
+        let button = document.getElementById("form");
+
+
+        form.style.display="flex";
+        form.style.zIndex="11000";
+
+
+    }
+    function cross(){
+        let form = document.getElementById("login-pop");
+        let property = form.style.zIndex;
+        let button = document.getElementById("form");
+
+        
+        form.style.display="none";
+        form.style.zIndex="-1";
+    }
+
+    function eye(){
+    let password = document.getElementById('password');
+        if(password.type=='password'){
+            password.type='text';
+        }
+        else{
+            password.type='password';
+        }
+    }
+
+    let btn = document.getElementById("btn2");
+    let arrow = document.getElementById("down");
+
+    function white(){
+        arrow.style.color='white';
+    }
+
+    function black(){
+        arrow.style.color='black';
+    }
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

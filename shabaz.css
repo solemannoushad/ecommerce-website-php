@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header #navbar {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #584f4f;
+  line-height: 2.5rem;
+}
+
+header #navbar #nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #navbar #nav-list .nav-items {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+header #navbar #nav-list .nav-items .add-more {
+  margin: 5px;
+}
+
+header #navbar #nav-list .nav-items:hover,
+header #navbar #nav-list .active {
+  background-color: #8a7d7d;
+}
+
+header #navbar #nav-list .default {
+  background-color: #3b9b3b;
+}
+
+header #down-nav {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #8a7d7d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+header #down-nav #icons {
+  position: relative;
+}
+
+header #down-nav i {
+  display: inline-block;
+  width: 30px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+header #down-nav i:nth-child(2) {
+  background-color: white;
+  color: blue;
+}
+
+header #down-nav i:nth-child(1) {
+  background-color: white;
+  color: orange;
+}
+
+header #down-nav i:nth-child(3) {
+  background-color: white;
+  color: skyblue;
+}
+
+#img-section {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  background-position: cover;
+  position: relative;
+}
+
+#img-section .img1 {
+  background: url(nature.jpg) center center/cover;
+}
+
+#img-section .img2 {
+  background: url(bee.jpg) center center/cover;
+}
+
+#img-section .img3 {
+  background: url(duck.jpg) center center/cover;
+}
+
+#img-section .slide {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+}
+
+#search-area {
+  width: 100%;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#search-area .btn {
+  padding: .5rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#search-area #btn1,
+#search-area #btn2:hover {
+  color: white;
+  background-color: black;
+}
+
+#search-area #btn2,
+#search-area #btn1:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+#search-area #search {
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding: .6rem .6rem .6rem 2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+#search-area #right {
+  margin-right: 2rem;
+  position: relative;
+}
+
+#search-area #right i {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#search-area #center {
+  width: 100%;
+  margin: 0 1rem;
+  position: relative;
+}
+
+#search-area #center i {
+  position: absolute;
+  left: 1rem;
+  top: 25%;
+  cursor: pointer;
+}
+
+#services {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#services .row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#services .pic1 {
+  background: url(duck.jpg) center center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+#services .pic2 {
+  background: url(bee.jpg) center center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+#services .services-container {
+  width: 30rem;
+  height: 15rem;
+  border: 1px solid black;
+  margin: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#services .services-container .right-services {
+  width: 48%;
+  height: 100%;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+}
+
+#services .services-container .left-services {
+  width: 48%;
+  height: 100%;
+  border: 1px solid red;
+  left: 0;
+}
+/*# sourceMappingURL=shabaz.css.map */
